@@ -1,0 +1,243 @@
+/* Progress Bar Container */
+#progress-bar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background-color: #f1f1f1;
+    z-index: 1000;
+}
+
+/* Progress Bar */
+#progress-bar {
+    width: 0;
+    height: 100%;
+    background-color: #007bff; /* Bootstrap primary color */
+    transition: width 0.25s ease-in-out; /* Smooth animation */
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+/* Styles for the Header Section */
+header {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('BG.jpeg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+}
+
+.animated-header {
+    opacity: 0;
+    animation: fadeInDown 2s ease-in-out forwards;
+}
+
+.animated-text {
+    opacity: 0;
+    animation: fadeInUp 2s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+
+.animated-button {
+    opacity: 0;
+    animation: bounceIn 2s ease-in-out forwards;
+    animation-delay: 1s;
+}
+
+@keyframes fadeInDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes bounceIn {
+    0%, 20%, 40%, 60%, 80%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+
+
+
+
+
+
+/* Main Content Styles */
+.main-content {
+    padding-top: 50px;
+}
+
+/* About Me Section */
+.about-img {
+    width: 300px;
+    height: 300px;
+    border: 5px solid #fff;
+    transition: transform 0.5s ease;
+}
+
+.about-img:hover {
+    transform: scale(1.1);
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.section-text {
+    font-size: 1.1rem;
+}
+
+/* Skills Section */
+.progress {
+    margin-bottom: 20px;
+    height: 30px;
+}
+
+.progress-bar {
+    font-size: 1rem;
+}
+
+/* Projects Section */
+.project-card {
+    transition: transform 0.5s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+
+
+
+
+
+
+/* Footer Styles */
+.footer {
+    background: #333;
+}
+
+.footer-heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    opacity: 0;
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+.footer-text, .footer-link {
+    opacity: 0;
+    animation: fadeInUp 1s ease-in-out forwards;
+    animation-delay: 0.3s;
+}
+
+.footer-link {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.animated-footer {
+    animation-delay: 0.2s;
+}
+
+.animated-footer-text {
+    animation-delay: 0.4s;
+    text-decoration: none;
+}
+
+
+.animated-footer-text a {
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.animated-footer-text a:hover {
+    color: yellow;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+body {
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #007bff #f1f1f1; /* For Firefox */
+}
+
+/* Webkit Browsers (Chrome, Safari) */
+body::-webkit-scrollbar {
+    width: 12px; /* Scrollbar width */
+}
+
+body::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Track color */
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #007bff; /* Scrollbar thumb color */
+    border-radius: 10px; /* Rounded corners */
+    border: 3px solid #f1f1f1; /* Space around scrollbar */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #0056b3; /* Color on hover */
+}
+
+
+
+
+
+
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 2rem;
+    display: none;
+    z-index: 1000;
+    opacity: 0.7;
+}
+
+#back-to-top:hover {
+    opacity: 1;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
