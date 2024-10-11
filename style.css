@@ -127,7 +127,6 @@ header {
 }
 
 #footer-logo {
-  width: 100px;
   transition: transform 0.5s ease-in-out;
     border-radius: 50%; 
 }
