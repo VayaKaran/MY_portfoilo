@@ -79,6 +79,27 @@ $(document).ready(function () {
 
 
 
+$(document).ready(function() {
+  // Add animation when page loads
+  $('#footer-logo').hide().fadeIn(1000);
+
+  // Add bounce animation on hover
+  $('#footer-logo').hover(
+    function() {
+      $(this).addClass('animate__animated animate__bounce');
+    },
+    function() {
+      $(this).removeClass('animate__animated animate__bounce');
+    }
+  );
+});
+
+
+
+
+
+
+
 $(document).ready(function () {
     // Back-to-Top Button Show/Hide on Scroll
     $(window).on('scroll', function () {
