@@ -126,6 +126,29 @@ header {
     background: #333;
 }
 
+.footer-logo {
+  width: 100px; /* Adjust size as needed */
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Responsive Footer Logo */
+@media (max-width: 768px) {
+  .footer-logo {
+    width: 80px; /* Smaller on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-logo {
+    width: 60px; /* Even smaller for small devices */
+  }
+}
+
+/* Animation for hovering over the logo */
+.footer-logo:hover {
+  transform: scale(1.2);
+}
+
 .footer-heading {
     font-size: 1.5rem;
     font-weight: bold;
