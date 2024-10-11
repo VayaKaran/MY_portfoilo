@@ -129,6 +129,7 @@ header {
 .footer-logo {
   width: 30px; /* Adjust size as needed */
   transition: transform 0.5s ease-in-out;
+    border-radius: 50%; 
 }
 
 /* Responsive Footer Logo */
